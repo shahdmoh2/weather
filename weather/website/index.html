@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Journal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Weather Journal</h1>
+        </header>
+        <main>
+            <section class="input-section">
+                <div class="input-group">
+                    <label for="zip"><i class="fas fa-map-pin"></i> Zip Code:</label>
+                    <input type="text" id="zip" placeholder="Enter zip code">
+                </div>
+                <div class="input-group">
+                    <label for="feelings"><i class="fas fa-smile"></i> Your Feelings:</label>
+                    <textarea id="feelings" placeholder="How are you feeling today?"></textarea>
+                </div>
+                <button id="generate"><i class="fas fa-cloud-sun"></i> Generate</button>
+            </section>
+            <section class="entry-section">
+                <h2>Latest Entry</h2>
+                <div id="entryHolder">
+                    <div id="date" class="entry-item"><i class="fas fa-calendar-day"></i> Date: </div>
+                    <div id="temp" class="entry-item"><i class="fas fa-thermometer-half"></i> Temperature: </div>
+                    <div id="content" class="entry-item"><i class="fas fa-pencil-alt"></i> Feelings: </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+ 
